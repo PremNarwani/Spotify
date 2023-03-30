@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color:white;
+}
+nav{
+   font-family: 'Ubuntu', sans-serif;
+   background-color: black;
+   color: white;
+   height: 50px;
+}
+nav ul{
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+    
+}
+.brand {
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+    font-size: 1.3rem;
+  
+}
+.brand img{
+  width: 35px;
+  padding: 0 6px;
+}
+nav ul li{
+    margin:8px;
+}
+.container{
+    height: 80vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width:70%;
+    border-radius: 6px;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+.container h1{
+    margin: 25px;
+}
+.bottom{
+    background-color: black;
+    position: sticky;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 15px;
+}
+.icons i{
+    cursor: pointer;
+    margin:0px 15px;
+}
+#myProgressBar{
+    width:80vw;
+    cursor: pointer;
+}
+.songItem{
+
+display: flex;
+width: 45%;
+margin: 5px 0;
+justify-content: space-evenly;
+background-color: white;
+color: black;
+border-radius: 30px;
+margin-left: 10px;
+height:7%;
+}
+.songItem img{
+    width:50px;
+     
+    border-radius: 50px;
+}
+.songItem span{
+    padding-top: 10px;
+    font-size: small;
+    font-family: 'Ubuntu', sans-serif;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+@media screen and (max-width:840px) 
+{
+    .bottom{
+        padding: 20px 0;
+    }
+    #myProgressBar{
+      position: relative;
+        bottom: 15px;
+    }
+    .songInfo{
+        position: relative;
+        top:20px;
+        left:20px;
+    }
+    .icons{
+        position: relative;
+        margin: 0%;
+    }
+    
+     .songItem{
+        height:30px;
+        width:200px;
+        margin-left: 30px;
+     }
+     .songItem img{
+        width:30px;
+        height: 30px;
+     }
+     .container h1{
+        font-size: 30px;
+     }
+     .songInfo img{
+        margin-right: 7px;
+     }
+}
